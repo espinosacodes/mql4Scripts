@@ -17,6 +17,8 @@
 //+
 
 int OnInit()
+ {
+     Alert("expert advisor has been launched");
 
  return (INIT_SUCCEEDED);
 }
@@ -25,11 +27,15 @@ int OnInit()
 //
  void OnDeinit(const int reason)
  {
-//---
+
+  Alert("edxpert advisor terminated");
 
  }
 //+
 /// Expert tick function
 //
-void OnTick()
+void OnTick(){
+  Alert("your new bid price is :" + string(Bid));
+
+}
 
